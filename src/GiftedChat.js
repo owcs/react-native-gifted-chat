@@ -63,6 +63,7 @@ class GiftedChat extends React.Component {
     this.onKeyboardDidHide = this.onKeyboardDidHide.bind(this);
     this.onSend = this.onSend.bind(this);
     this.getLocale = this.getLocale.bind(this);
+    this.setText = this.setText.bind(this);
     this.onInputSizeChanged = this.onInputSizeChanged.bind(this);
     this.onInputTextChanged = this.onInputTextChanged.bind(this);
     this.onMainViewLayout = this.onMainViewLayout.bind(this);
@@ -132,6 +133,10 @@ class GiftedChat extends React.Component {
 
   getLocale() {
     return this._locale;
+  }
+
+  setText(text) {
+    this.setState({text:text});
   }
 
   setMessages(messages) {
