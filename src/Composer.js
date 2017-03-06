@@ -30,7 +30,7 @@ export default class Composer extends React.Component {
 
         onChange={(e) => this.onChange(e)}
         onChangeText={text => this.onChangeText(text)}
-
+        onContentSizeChange={(e) => this.onChange(e)}
         style={[styles.textInput, this.props.textInputStyle, {height: this.props.composerHeight}]}
 
         value={this.props.text}
